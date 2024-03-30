@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+
+<div class="header">
+    <!-- <h2>Welcome to the Dashboard</h2> -->
+    <!-- Display number of items in cart -->
+    <div class="cart-items">
+        <i class="bi bi-cart cart-icon bi-lg"></i>
+        <span class="badge" (click)="addcart()">{{ itemsInCart }}</span>
+    </div>
+</div>
+  
+<div class="item-card">
+    <div class="product-card" *ngFor="let product of products">
+      <img class="product-image" [src]="product.image" alt="Product Image">
+      <div class="product-details">
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>price:{{ product.price }}Rs/perkg</p>
+        <button (click)="addToCart(product)" class="buy-now-btn">Add to cart</button>
+      </div>
+    </div>
+  </div>
+  
