@@ -28,7 +28,17 @@
     }
     
 
-
+    forgotPassword(email: string) {
+      return this.http.post<any>(`${this.baseUrl}/forgot-password`, { email });
+    }
+  
+    updatePassword(email: string, password: string): Observable<any> {
+      return this.http.post<any>(`${this.baseUrl}/update-password`, { email, password }).pipe(
+        catchError(this.handleError)
+      );
+    }
+  
+  
     verifyToken(otp: string): Observable<any> {
       const body = { otp }; // Update the body to include OTP
       return this.http.post<any>(`${this.baseUrl}/verifyToken`, body);

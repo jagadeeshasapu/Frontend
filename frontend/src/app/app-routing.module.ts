@@ -6,6 +6,7 @@ import { OtpComponent } from './otp/otp.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CartComponent } from './cart/cart.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path:'updateProfile',
     component:ProfileComponent
+  },
+  {
+    path:'forgot',
+    component:ForgotPasswordComponent
   },
 
 ];

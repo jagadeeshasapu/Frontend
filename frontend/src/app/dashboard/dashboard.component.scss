@@ -1,18 +1,19 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
-// .cart-items {
-// 	border-radius: 50%;
-// 	background-color: rgb(20, 158, 105);
-// 	font-weight: 700;
-// 	color: aliceblue;
-// 	width: 30px;
-// 	height: 30px;
-// 	font-size: 30px;
-// 	padding: 10px;
-// 	top: 10px;
-// 	position: relative;
-// 	left: 30px;
-// }
+.cart-container {
+    position: relative;
+}
+
+.cart-items {
+    position: absolute;
+    top: 20;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 .badge {
     background-color: red;
