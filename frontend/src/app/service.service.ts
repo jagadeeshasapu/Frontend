@@ -2,7 +2,7 @@
   import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
   import { catchError,  throwError } from 'rxjs';
   import { AuthService } from './auth.service';
-  import { BehaviorSubject, Observable } from 'rxjs';
+  import {  Observable } from 'rxjs';
 
   @Injectable({
     providedIn: 'root'
@@ -38,6 +38,14 @@
       );
     }
   
+    // RemoveItemCart(itemId: string): Observable<any> {
+    //   let user_data: any = localStorage.getItem("user");
+    //   let data = JSON.parse(user_data);
+    //   return this.http.delete<any>(`${this.baseUrl}/delete`, {
+    //     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
+    //     body: { userId: data._id, itemId: itemId }
+    //   });
+    // }
   
     verifyToken(otp: string): Observable<any> {
       const body = { otp }; // Update the body to include OTP

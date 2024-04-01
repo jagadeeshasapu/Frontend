@@ -13,6 +13,7 @@ import { CartComponent } from './cart/cart.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { SuccessfullyComponent } from './successfully/successfully.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     NavbarComponent,
     ProfileComponent,
     ForgotPasswordComponent,
+    SuccessfullyComponent,
   ],
   imports: [
     BrowserModule,

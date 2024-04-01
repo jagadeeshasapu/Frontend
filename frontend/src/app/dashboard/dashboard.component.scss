@@ -6,8 +6,8 @@
 
 .cart-items {
     position: absolute;
-    top: 20;
-    right: 0;
+    // top: 20;
+    right: 14em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,8 +28,8 @@
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	padding: 10px;
-	border-bottom: 1px sold #ccc;
+	padding: 2em;
+	// border-bottom: 1px solid #ccc;
 
 }
 
