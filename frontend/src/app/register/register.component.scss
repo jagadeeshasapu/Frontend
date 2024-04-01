@@ -5,10 +5,9 @@
   
   .register-photo .image-holder {
     display: table-cell;
-    width: fixed; /* This should be a fixed width */
-    max-width: 400px; /* Adjust this to your desired maximum width */
+    max-width: 350px; /* Adjust this to your desired maximum width */
     height: 500px; /* Set a fixed height for the image */
-    // background: url(../../assets/image/image-background.avif);
+     background: url('/assets/new.jpg');
     background-size: cover;
   }
   

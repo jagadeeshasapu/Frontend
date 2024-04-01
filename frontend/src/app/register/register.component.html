@@ -60,9 +60,13 @@
             <div class="form-group">
                 <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to the license terms.</label></div>
             </div>
-            <button type="submit" class="btn btn-primary btn-block" (click)="save()" [disabled]="signinForm.invalid">Sign Up</button><br>
-          
+            <button type="submit" class="btn btn-primary btn-block" (click)="save()" [disabled]="signinForm.invalid || loading">
+              <span *ngIf="!loading">Sign Up</span>
+              <div class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf="loading"></div>
+            </button>
+            <br>
             <a href="#" class="already">You already have an account? Login here.</a>
           </form>
     </div>
 </div>
+

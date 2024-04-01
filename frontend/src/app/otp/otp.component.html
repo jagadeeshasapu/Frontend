@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
     <div class="section-title">
         <h1 data-text="">Enter OTP for {{ email }}</h1>
     </div>
@@ -14,4 +14,30 @@
         <button type="submit" [disabled]="otpForm.invalid" class="btn btn-primary">Verify OTP</button>
     </form>
 </div>
-</div>
+</div> -->
+
+<div class="container height-100 d-flex justify-content-center align-items-center">
+    <div class="position-relative">
+      <div class="card p-2 text-center">
+        <h6>Please enter the one-time password <br> to verify your account</h6>
+        <div>
+          <span>A code has been sent to </span>
+          <small>{{ email }}</small>
+        </div>
+        <form [formGroup]="otpForm" (ngSubmit)="verifyOTP()">
+          <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2">
+            <input type="text" formControlName="first" class="m-2 text-center form-control rounded" maxlength="1" />
+            <input type="text" formControlName="second" class="m-2 text-center form-control rounded" maxlength="1" />
+            <input type="text" formControlName="third" class="m-2 text-center form-control rounded" maxlength="1" />
+            <input type="text" formControlName="fourth" class="m-2 text-center form-control rounded" maxlength="1" />
+            <input type="text" formControlName="fifth" class="m-2 text-center form-control rounded" maxlength="1" />
+            <input type="text" formControlName="sixth" class="m-2 text-center form-control rounded" maxlength="1" />
+          </div>
+          <div class="mt-4">
+            <button type="submit" [disabled]="otpForm.invalid" class="btn btn-primary">Verify OTP</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

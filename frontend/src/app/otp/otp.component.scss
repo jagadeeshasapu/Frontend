@@ -1,21 +1,55 @@
-.section-title h1{
-    
-    position: center;
-}
-
-.form-control{
-    background-color: #f0f0f0; 
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-}
-.forms {
+body {
+    background-color: blue; /* Change background color to blue */
+  }
+  
+  .height-100 {
+    height: 100vh;
+  }
+  
+  .card {
+    width: 400px;
+    border: none;
+    height: 300px;
+    box-shadow: 0px 5px 20px 0px #d2dae3;
+    z-index: 1;
     display: flex;
-align-items: center; 
-justify-content: center; 
-flex-direction: column; 
-margin-top: 30px;
-}
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card h6 {
+    color: blue; /* Change text color to blue */
+  }
+  
+  .forms {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #d2dae3;
+  }
+  
+  .btn-primary {
+    border-radius: 20px;
+    height: 40px;
+    background-color: blue; /* Change button color to blue */
+    border: 1px solid blue; /* Change border color to blue */
+    width: 140px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #007bff; /* Change hover color to darker blue */
+    border-color: #007bff; /* Change border hover color to darker blue */
+  }
+  
+  .text-danger {
+    color: red; /* Keep error message color as red */
+  }
+  

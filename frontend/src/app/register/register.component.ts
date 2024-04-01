@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class RegisterComponent {
   emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   signinForm: FormGroup;
+  loading: boolean = false;
 
   constructor(private fb: FormBuilder, private router: Router, private service: ServiceService) {
     this.signinForm = this.fb.group({
@@ -41,10 +42,10 @@ export class RegisterComponent {
       "email": this.signinForm.value.email,
       "password": this.signinForm.value.password,
     };
-
+    this.loading = true;
     try {
       const resultData: any = await this.service.registerUser(bodyData).toPromise();
-
+      
       if (resultData.status === 'Success') {
         const verificationLink = resultData.verificationLink;
 
